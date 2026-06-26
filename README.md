@@ -1,16 +1,17 @@
-# React + Vite
+# 🐳 DevOps Laboratory Dashboard - Exam Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A containerized React-Vite web portal showcasing pipeline logs, deployment status, and mock laboratory evaluation metrics.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Lab Board UI**: Visual dashboard for monitoring automated Jenkins build and docker container status.
+- **Vite Setup**: High-performance module bundling.
+- **Interactive Routing**: Built-in routing via `react-router-dom` for managing views.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📦 Quickstart
+```bash
+# Build Docker Image
+docker build -t devops-lab-board .
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Run Container
+docker run -p 80:80 devops-lab-board
+```
